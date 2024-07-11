@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent div{
+            color: tomato;
+            font-size: 50px;
+        }
+        #child>div{
+            border: 2px solid black;
+        }
+        #parent+p{
+            background-color: rgb(39, 63, 4);
+        }
+        #parent~p{
+            color: yellow;
+        }
+        p{
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>hi 1</p>
+    <div id="parent">
+        <div id="child">
+            <div>
+                child
+                <div>
+                    grand child
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>hi 2</p>
+    <p>hi 3</p>
+</body>
+</html>
